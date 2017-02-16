@@ -8,7 +8,6 @@
         transform: rotate(360deg);
     }
 }
-/*раз*/
 @keyframes spin {
     0% {
         -webkit-transform: rotate(0deg);
