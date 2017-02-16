@@ -18,6 +18,45 @@
         transform: rotate(360deg);
     }
 }
+@-webkit-keyframes slide {
+    0% {
+        -webkit-transform: translate(-200px,0px); background: red;
+        transform: translate(-200px,0px); background: red;
+    }
+    50%
+    {
+        -webkit-transform: translate(200px,0px); background: blue;
+        transform: translate(200px,0px); background: blue;
+    }
+    100% {
+        -webkit-transform: translate(-200px,0px); background: red;
+        transform: translate(-200px,0px); background: red;
+    }
+}
+@keyframes slide {
+    0% {
+        -webkit-transform: translate(-200px,0px); background: red;
+        transform: translate(-200px,0px); background: red;
+    }
+    50%
+    {
+        -webkit-transform: translate(200px,0px); background: blue;
+        transform: translate(200px,0px); background: blue;
+    }
+    100% {
+        -webkit-transform: translate(-200px,0px); background: red;
+        transform: translate(-200px,0px); background: red;
+    }
+}
+.loader2 {
+    visibility: visible;
+    display: inline-block;
+    position: inherit;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: slide 4s infinite cubic-bezier(0, 0, 0.36, 0.66);
+    animation: slide 4s infinite cubic-bezier(0, 0, 0.36, 0.66);
+}
 .loader {
     visibility: visible;
     display: inline-block;
@@ -32,5 +71,5 @@
 }
 .banner
 {
-    margin-top: 20%;
+    margin-top: 15%;
 }
